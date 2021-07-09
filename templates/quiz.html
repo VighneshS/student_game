@@ -36,27 +36,27 @@
     </style>
 </head>
 <body style="margin: 10px">
-<h1 style="margin-left: 40%; color: green">Green Player</h1>
+<h1 style="margin-left: 40%">Student</h1>
 <h4>Name: Vighnesh Sivaraman</h4>
 <h4>UTA ID: 1001878596</h4>
-<div id="game">
-    <span id="timer"></span>
-    <label style="color: red">Red Player Name: <span id="red_name"></span></label><br>
-    <label style="color: red">Remaining Stones: <span id="remaining_red"></span></label><br>
-
-    <label style="color: green">Green Player Name: <span id="green_name"></span></label><br>
-    <label style="color: green">Remaining Stones: <span id="remaining_green"></span></label><br>
-    <button class="btn btn-primary" onclick="removeRock()">Remove Green Rock</button>
-    <br><br><br><br>
+<div id="quiz">
+    <label>Student Name: <span id="student_name"></span></label><br>
+    <label>Teacher Name: <span id="teacher_name"></span></label><br>
+    <label for="question"><strong>Question: </strong>
+        <span id="question"></span></label><br>
+    <label for="answer"><strong>Answer: </strong></label>
+    <input id="answer" name="answer" type="text">
+    <input id="save_name" class="btn btn-primary" value="Submit" onclick="saveAnswer()" name="name" type="button"><br>
+    <label for="last_answer"><strong>Last saved Answer: </strong><span id="last_answer"></span></label><br>
+    <label for="last_score"><strong>Score from Teacher: </strong><span id="last_score"></span></label><br>
 </div>
 <br><br><br>
 
-<input id="end_game" class="btn btn-danger" value="End Game" onclick="endGame()" type="button"><br>
-
+<input id="end_quiz" class="btn btn-danger" value="End Quiz" onclick="endQuiz()" name="end_quiz" type="button"><br>
 <div id="spinner" class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
     <span class="sr-only">Loading...</span>
 </div>
-<h2 id="waiting">Waiting for Red Player...</h2>
+<h2 id="waiting">Waiting for Teacher...</h2>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 <script src="{{ url_for('static', filename='quiz_scripts.js') }}"></script>
 </body>

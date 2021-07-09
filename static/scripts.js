@@ -1,7 +1,7 @@
 let spinner
 let name
 
-function saveTeacherName() {
+function saveStudentName() {
     spinner.show()
     let payLoad = {
         'name': name.val()
