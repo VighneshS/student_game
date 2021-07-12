@@ -108,7 +108,6 @@ $(function () {
                 spinner.hide()
                 waiting.hide()
             }
-            console.log(data);
 
             if (!data['student']) {
                 source.close()
