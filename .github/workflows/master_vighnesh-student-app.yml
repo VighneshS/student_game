@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'vighnesh-student-app'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_9a87a8c85ab049c6b3a6d5f42bca231b }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_f427341a99a540de8a7506a7702fe940 }}
